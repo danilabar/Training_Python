@@ -119,11 +119,14 @@ def feed_animals():
 def heaviest():
     max_weight = 0
     name_animals = ''
+    all_weight = 0
     for animal in all_animals_list:
+        all_weight += animal.weight
         if animal.weight > max_weight:
             max_weight = animal.weight
             name_animals = animal.name
-    print(name_animals)
+    print(f'Вес всех животных {all_weight} кг.')
+    print(f'Самый тяжёлый {name_animals}')
 
 def main():
     while True:
@@ -140,4 +143,3 @@ def main():
             break
 
 main()
-
