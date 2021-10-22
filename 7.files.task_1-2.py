@@ -1,3 +1,4 @@
+# https://github.com/netology-code/py-homeworks-basic/tree/master/7.files
 # Необходимо написать программу для кулинарной книги.
 #
 # Список рецептов должен храниться в отдельном файле в следующем формате:
@@ -32,8 +33,8 @@
 #     ]
 #   }
 # Задача №2
-# Нужно написать функцию, которая на вход принимает список блюд из cook_book и количество персон для кого мы будем готовить
-#
+# Нужно написать функцию, которая на вход принимает список блюд из cook_book и количество персон для кого мы будем
+# готовить
 # get_shop_list_by_dishes(dishes, person_count)
 # На выходе мы должны получить словарь с названием ингредиентов и его количества для блюда. Например, для такого вызова
 #
@@ -49,3 +50,24 @@
 #   'Чеснок': {'measure': 'зубч', 'quantity': 6}
 # }
 # Обратите внимание, что ингредиенты могут повторяться
+
+def read_file():
+    cook_book = {}
+    with open('files/recipes.txt', encoding='utf-8') as cook_book_in_file:
+        line = cook_book_in_file.readline().strip()
+        while line != '':
+            dish = line
+            count_ingredients = int(cook_book_in_file.readline().strip())
+            ingredients = []
+            for _ in range(count_ingredients):
+                ingredient_line = cook_book_in_file.readline().strip()
+                ingredient_info = ingredient_line.split(' | ')
+                name = ingredient_info[0]
+                quantity = int(ingredient_info[1])
+                measure = ingredient_info[2]
+                ingredient_info = {'ingredient_name': name, 'quantity': quantity, 'measure': measure}
+                ingredients.append(ingredient_info)
+            cook_book[dish] = ingredients
+            cook_book_in_file.readline()
+            line = cook_book_in_file.readline().strip()
+    return cook_book
