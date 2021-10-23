@@ -71,3 +71,25 @@ def read_file():
             cook_book_in_file.readline()
             line = cook_book_in_file.readline().strip()
     return cook_book
+
+
+dishes = list(input('Введите список блюд через запятую: ').split(', '))
+person_count = int(input('Введите количество персон: '))
+
+
+def get_shop_list_by_dishes(dishes, person_count):
+    cook_book = read_file()
+    buy_products = {}
+    for dish in dishes:
+        ingredients = cook_book[dish]
+        for ingredient in ingredients:
+            quantity = ingredient['quantity'] * person_count
+            name = ingredient['ingredient_name']
+            if name in buy_products:
+                buy_products[name]['quantity'] += quantity
+            else:
+                buy_products[name] = {'measure': ingredient['measure'], 'quantity': quantity}
+    print(buy_products)
+
+
+get_shop_list_by_dishes(dishes, person_count)
