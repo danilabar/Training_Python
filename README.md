@@ -1,2 +1,13 @@
 # Training_Python
-# https://github.com/netology-code/devpy/tree/solution/6.classes
+ - 6 лекция Классы
+   - ДЗ https://github.com/netology-code/devpy/tree/main/6.classes
+   - Решение https://github.com/netology-code/devpy/tree/solution/6.classes
+ - 7 лекция Работа с файлами
+   - Методичка https://github.com/netology-code/py-homework-basic-files/tree/master/2.4.files/lection_code
+   - ДЗ https://github.com/netology-code/devpy/tree/main/7.files
+   - Решение https://github.com/netology-code/devpy/tree/solution/7.files
+ - 8 лекция Разные типы данных
+   - Методичка
+     - https://replit.com/@shorstko/netologyfileformats201124?v=1
+     - https://replit.com/@shorstko/netologyxmlnamespaces?v=1 - xml namespaces
+   - ДЗ https://github.com/netology-code/devpy/tree/main/8.formats.json.xml
