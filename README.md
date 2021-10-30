@@ -11,3 +11,4 @@
      - https://replit.com/@shorstko/netologyfileformats201124?v=1
      - https://replit.com/@shorstko/netologyxmlnamespaces?v=1 - xml namespaces
    - ДЗ https://github.com/netology-code/devpy/tree/main/8.formats.json.xml
+   - Решение https://github.com/netology-code/devpy/tree/solution/8.formats.json.xml
