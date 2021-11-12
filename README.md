@@ -12,3 +12,6 @@
      - https://replit.com/@shorstko/netologyxmlnamespaces?v=1 - xml namespaces
    - ДЗ https://github.com/netology-code/devpy/tree/main/8.formats.json.xml
    - Решение https://github.com/netology-code/devpy/tree/solution/8.formats.json.xml
+ - 9 лекция Библиотека requests
+   - ДЗ https://github.com/netology-code/py-homeworks-basic/tree/master/9.http.requests
+   - Решение https://github.com/netology-code/devpy/tree/solution/9.http.requests
